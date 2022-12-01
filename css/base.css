@@ -1,64 +1,82 @@
 @font-face {
-    font-family: "Amatic SC";
-    src: url("/assets/fonts/amatic/AmaticSC-Bold.ttf") format(truetype);
+  font-family: "Amatic SC";
+  src: url("/assets/fonts/amatic/AmaticSC-Bold.ttf") format(truetype);
 }
 
 @font-face {
-    font-family: "Amatic SC";
-    src: url("/assets/fonts/amatic/AmaticSC-Regular.ttf") format(truetype);
+  font-family: "Amatic SC";
+  src: url("/assets/fonts/amatic/AmaticSC-Regular.ttf") format(truetype);
 }
 
 @font-face {
-    font-family: "Tenor Sans";
-    src: url("/assets/fonts/Ternor/TenorSans-Regular.ttf") format(truetype);
+  font-family: "Tenor Sans";
+  src: url("/assets/fonts/Ternor/TenorSans-Regular.ttf") format(truetype);
 }
 
 :root {
-      /* Used for site bg, font, card bg */
-  --off-white-color: #FCFCFC;
+  /* Used for site bg, font, card bg */
+  --color-off-white: #fcfcfc;
 
-     /* Used for bg element*/
-  --bg-element-color: #F8F0E7;
+  /* Used for bg element*/
+  --color-bg-element: #f8f0e7;
 
-       /* Used for fonts, icon*/
-  --font-color: #212427;
+  /* Used for fonts, icon*/
+  --color-font: #212427;
 
-   /* Used for placeholder and overlay*/
-  --blue-color: #888888;
+  /* Used for placeholder and overlay*/
+  --color-gray: #888888;
 
-      /* Used for CTA, accent, font, action, link, placeholder*/
-  --purple-color: #8949A7;
+  /* Used for CTA, accent, font, action, link, placeholder*/
+  --color-purple: #8949a7;
 
-    /* Used for header and footer*/
-  --celeste-blue-color: #DAEBF2;
+  /* Used for header and footer*/
+  --color-celeste-blue: #daebf2;
 
-      /* Used for banner and footer*/
-  --turquoise-blue-color: #5BC1CF;
+  /* Used for banner and footer*/
+  --color-turquoise-blue: #5bc1cf;
 
-     /* Used for banner and bg*/
-  --blue-color: #127ACA;
+  /* Used for banner and bg*/
+  --color-blue: #127aca;
 
-    /* Used for accent, action and border*/
-  --orange-color: #DD8560;
+  /* Used for accent, action and border*/
+  --color-orange: #dd8560;
+}
+
+h4 {
+  font-family: "Amatic SC";
+  font-size: 24px;
+  color: var(--color-font);
+
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 24px 0 0 0;
+}
+
+p {
+  font-family: "Tenor Sans";
+  font-size: 16px;
+  color: var(--color-font);
 }
 
 body {
-  background-color: var(--off-white-color);
+  background-color: var(--color-off-white);
 }
 
 a {
+  font-family: "Tenor Sans";
   color: #212427;
+  font-size: 16px;
   text-decoration: none;
 }
 
 a:hover,
 a:hover * {
   transition: all 0.3s ease;
-  color: var(--orange-color);
-
+  color: var(--color-orange);
   font-weight: bold;
 }
 
 a.active {
-  border-bottom: 2px solid var(--orange-color);
+  border-bottom: 2px solid var(--color-orange);
 }
+

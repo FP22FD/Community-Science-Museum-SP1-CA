@@ -14,35 +14,42 @@
 <body>
     <div id="main-container">
         <header>
-            <!-- menu -->
+            <!-- grid part | menu -->
+            <label id="hamburger-label" for="hamburger-input">
+                <img src="assets/icons/hamburger_button.svg" alt="hamburger icon">
+            </label>
+            <input type="checkbox" id="hamburger-input">
+
+            <nav aria-label="main menu">
+
+                <!-- grid part | Icon close -->
+                <label id="close-label" for="hamburger-input">
+                    <img src="assets/icons/Close.svg" alt="close icon">
+                    <h4>Close</h4>
+                </label>
+
+                <hr class="w-100">
+                
+                <a class="active" href="index.html">Home</a>
+                <a href="">Events</a>
+                <a href="">Exhibitions</a>
+                <a href="">Vist</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+
+            </nav>
+
             <!-- grid part | Icon search -->
-            <label id="search-label" for="search-icon">
+            <label id="search-label" for="search-input">
                 <img src="assets/icons/Searchdesk.svg" alt="search icon">
             </label>
             <input type="checkbox" id="search-input">
 
             <!-- grid part | logo -->
             <a id="logo" href="index.html">
-                <img src="assets/icons/Group2desk.svg" class="fit-image" alt="logo">
+                <img src="assets/icons/Group2desk.svg" alt="logo">
             </a>
 
-            <!-- grid part | menu -->
-            <label class="hamburger-icon" for="hamburger">
-                <img src="assets/icons/hamburger_button.svg" alt="hamburger icon">
-            </label>
-            <input type="checkbox" id="hamburger">
-
-            <nav aria-label="main menu">
-                <a class="active" href="index.html">Home</a>
-                <a href="">Exhibitions</a>
-                <a href="">Events</a>
-                <a href="">Blog</a>
-                <a href="">About</a>
-                <a href="">Contact</a>
-                <a href="">Visit</a>
-                <a href="">Get Inveolved</a>
-                <a href="">Explore</a>
-            </nav>
         </header>
     </div>
 </body>
