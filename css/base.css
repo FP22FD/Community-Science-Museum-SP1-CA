@@ -40,12 +40,20 @@
 
   /* Used for accent, action and border*/
   --color-orange: #dd8560;
+
+  --font-family-header: "Amatic SC";
 }
 
 body {
   margin: 0;
   padding: 0;
   background-color: var(--color-off-white);
+
+  font-family: "Tenor Sans";
+  font-size: 14px;
+  color: var(--color-font);
+
+
 }
 
 /* Useful as default. 
@@ -54,26 +62,63 @@ Ref: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
   box-sizing: border-box;
 }
 
-h4 {
-  font-family: "Amatic SC";
-  font-size: 24px;
-  color: var(--color-font);
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-header);
+  color: var(--color-purple);
   font-weight: 700;
-  letter-spacing: 2px;
-  margin: 24px 0 0 0;
 }
 
-p {
+h1 {
+  font-size: 32px;
+  
+}
+.pge-title {
+margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+h2 {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+h3 {
+  font-size: 18px;
+}
+
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5 {
   font-family: "Tenor Sans";
-  font-size: 16px;
   color: var(--color-font);
+  /* color: var(--color-off-white); */
+  /* font-weight: 700; */
+  font-weight: normal;
+}
+
+.display-1 {
+  font-size: 32px;
+}
+.display-2 {
+  font-size: 24px;
+  
+}
+.display-3 {
+  font-size: 18px;
+}
+
+small {
+  font-size: 12px;
 }
 
 a {
-  font-family: "Tenor Sans";
   color: #212427;
-  font-size: 16px;
   text-decoration: none;
 }
 
@@ -86,4 +131,35 @@ a:hover * {
 
 a.active {
   border-bottom: 2px solid var(--color-orange);
+}
+
+@media (min-width: 800px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 64px;
+  }
+  h2 {
+    font-size: 48px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .display-1 {
+    font-size: 64px;
+  }
+  .display-2 {
+    font-size: 48px;
+  }
+  .display-3 {
+    font-size: 18px;
+  }
+
+  small {
+    font-size: 14px;
+  }
 }
