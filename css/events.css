@@ -1,6 +1,12 @@
-@import "css/template.css";
-@import "css/card.css";
+@import "/css/template.css";
+@import "/css/card.css";
 
-.pippo {
-    color: red;
+/* custom css for events page */
+
+.card-banner {
+    display: none;
+}
+
+.card-child {
+    row-gap: 16px;
 }

@@ -1,0 +1,37 @@
+@import "/css/template.css";
+/* @import "/css/card.css"; */
+
+/* custom css for about page */
+
+.card-banner {
+  /* display: none; */
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+main {
+  display: flex;
+  /* overflow: hidden; */
+}
+
+aside {
+  /* width: 200px; */
+  /* flex-basis: 200px; */
+  flex: 0 0 200px;
+  /* display: none; */
+  background-color: var(--color-bg-element);
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  overflow: auto;
+}
+

@@ -133,10 +133,6 @@ h4 {
     flex-direction: row;
   }
 
-  /* #logo img {
-    width: 100%;
-  } */
-
   nav {
     grid-area: 2 / 6 / span 1 / span 8;
 

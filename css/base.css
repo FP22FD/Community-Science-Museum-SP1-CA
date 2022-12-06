@@ -79,13 +79,15 @@ h1 {
 }
 .pge-title {
 margin-top: 32px;
-  margin-bottom: 32px;
+margin-bottom: 32px;
+
 }
 
 h2 {
   font-size: 24px;
   letter-spacing: 2px;
 }
+
 h3 {
   font-size: 18px;
 }
@@ -97,8 +99,6 @@ h3 {
 .display-5 {
   font-family: "Tenor Sans";
   color: var(--color-font);
-  /* color: var(--color-off-white); */
-  /* font-weight: 700; */
   font-weight: normal;
 }
 
@@ -107,8 +107,9 @@ h3 {
 }
 .display-2 {
   font-size: 24px;
-  
+  letter-spacing: 0;
 }
+
 .display-3 {
   font-size: 18px;
 }
@@ -139,24 +140,28 @@ a.active {
   }
 
   h1 {
-    font-size: 64px;
+    font-size: 40px;
   }
   h2 {
-    font-size: 48px;
+    font-size: 32px;
   }
 
   h3 {
-    font-size: 18px;
+    font-size: 24px;
   }
 
   .display-1 {
-    font-size: 64px;
+    font-size: 40px;
   }
+
   .display-2 {
-    font-size: 48px;
+    font-size: 32px;
+
   }
+
   .display-3 {
-    font-size: 18px;
+    font-size: 24px;
+
   }
 
   small {

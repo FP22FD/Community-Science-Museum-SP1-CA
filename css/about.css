@@ -1,0 +1,81 @@
+@import "/css/template.css";
+@import "/css/card.css";
+
+/* style for mobile version */
+
+.card-banner {
+  display: none;
+
+  margin-top: 0;
+}
+
+.card-child {
+  display: block;
+
+  flex-basis: 60%;
+  margin: 0 0 56px 0;
+}
+
+.card-agenda {
+  border: none;
+  text-align: left;
+}
+
+/*--------------------------------*/
+main h1 {
+  text-align: center;
+}
+
+main h2 {
+  text-align: left;
+}
+
+.main-content {
+  column-gap: 10%;
+}
+
+/*-------------------------------------*/
+aside {
+  display: flex;
+  flex-direction: column;
+}
+
+aside section {
+  background-color: var(--color-off-white);
+}
+
+.card-services > div {
+  padding: 16px;
+}
+
+.card-services {
+  margin: 0;
+}
+
+.card-services h2 {
+  margin-top: 0;
+}
+
+.content-agenda h2 {
+  margin-top: 0;
+}
+
+/* style for mobile desktop */
+
+@media (min-width: 800px) {
+  .card-banner {
+    display: flex;
+    flex-basis: 30%;
+    padding: 0;
+    border: none;
+    margin-top: 0;
+  }
+
+  main h1 {
+    text-align: start;
+  }
+
+  .main-content {
+    display: flex;
+  }
+}

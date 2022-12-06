@@ -1,0 +1,76 @@
+/* html,
+body {
+  margin: 0;
+  height: 100%;
+} */
+
+/* .container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+} */
+
+/* header {
+  // No styles. Header will expand to fit its content.
+} */
+
+main {
+  /* // Styles as a child element of container */
+  overflow: hidden;
+
+  /* // Styles as a parent of aside and article */
+  display: flex;
+}
+
+aside {
+  /*width: 200px;
+      flex-basis: 200px; */
+  flex: 0 0 200px;
+  /*display: none; */
+}
+
+article {
+  /* // Styles as a parent of .content and footer */
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  overflow: auto;
+}
+
+/* footer {
+  // No styles. Footer will expand to fit its content.
+} */
+
+/* Demo Styles 
+------------------------------------- */
+
+/* // Examples showing parents and children
+// .container > * { border: 4px dashed red; margin: .5rem; }
+// main > * { border: 4px dashed red; margin: .5rem; }
+// article > * { border: 4px dashed red; margin: .5rem; } */
+
+/* header, */
+aside,
+.content,
+footer {
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+/* h1,
+p {
+  margin-top: 0;
+} */
+
+/* header {
+  background-color: yellow;
+} */
+aside {
+  background-color: papayawhip;
+}
+
+/* footer {
+  background-color: goldenrod;
+} */

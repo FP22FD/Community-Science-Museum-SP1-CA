@@ -12,10 +12,6 @@
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
-
-  /* margin-top: 8px;
-  margin-bottom: 24px;
-  padding-top: 8px; */
 }
 
 .contact-footer {
@@ -25,10 +21,6 @@
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
-
-  /* margin-top: 16px;
-  margin-bottom: 24px;
-  padding-top: 8px; */
 }
 
 hr {
@@ -46,10 +38,6 @@ hr {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
-
-  /* margin-top: 16px;
-  margin-bottom: 24px;
-  padding-top: 8px; */
 }
 
 .menu-footer a {
