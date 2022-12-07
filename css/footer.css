@@ -23,13 +23,13 @@
   justify-content: center;
 }
 
-hr {
+footer hr {
   width: 140px;
   height: 1px;
   border: 0;
 
   background-color: var(--color-gray);
-}
+} 
 
 .menu-footer {
   display: flex;
