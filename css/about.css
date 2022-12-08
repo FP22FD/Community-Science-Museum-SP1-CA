@@ -3,30 +3,26 @@
 
 /* style for mobile version */
 
-
-aside {
+aside.agenda {
   display: none;
 }
 
-/* .card-banner {
-  display: none;
+aside section {
+  background-color: var(--color-off-white);
 
-  margin-top: 0;
-} */
+  padding: 8px;
+}
 
-/* .card {
-  display: block; */
+aside .agenda {
 
-  /* flex-basis: 60%; */
-  /* margin: 0 0 56px 0; */
-/* } */
+  display: flex;
 
-/* .card-agenda {
-  border: none;
-  text-align: left;
-} */
+  margin-top: 8px;
+}
 
-/*--------------------------------*/
+aside .agenda img {
+  margin-top: 16px;
+}
 
 .title h1 {
   text-align: center;
@@ -36,60 +32,15 @@ main h2 {
   text-align: left;
 }
 
-/* .main-content {
-  column-gap: 10%;
-} */
-
-/*-------------------------------------*/
-
-/* aside {
-  display: none;
-  display: flex;
-  flex-direction: column;
-} */
-
-aside section {
-  /* display: none; */
-  background-color: var(--color-off-white);
-}
-
-/* .card-services > div {
-  padding: 16px;
-} */
-
-/* .card-services {
-  margin: 0;
-} */
-
-/* .card-services h2 {
-  margin-top: 0;
-} */
-
-/* .content-agenda h2 {
-  margin-top: 0;
-} */
-
-/* style for mobile desktop */
+/*-----------media queries----------------*/
 
 @media (min-width: 800px) {
   .title h1 {
     text-align: start;
   }
 
-  aside {
+  aside.agenda {
     display: block;
   }
 
-  /* .card-banner {
-    display: flex;
-    flex-basis: 30%;
-    padding: 0;
-    border: none;
-    margin-top: 0;
-  } */
-
-
-  /* .main-content {
-    display: flex;
-  } */
 }

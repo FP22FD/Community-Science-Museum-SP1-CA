@@ -2,6 +2,8 @@ body {
   background-color: var(--off-white);
 }
 
+/*-------custom css for mobile------- */
+
 #main-container {
   display: grid;
   grid-template-columns: 24px repeat(4, 1fr) 24px;
@@ -23,18 +25,29 @@ main {
   flex-direction: column;
 }
 
+/*-------custom css for mobile------- */
+
 .image-gradient {
   position: absolute;
   top: 0;
 
-  background: linear-gradient(
+  /* background: linear-gradient(
     180deg,
     #888888 0%,
     rgba(33, 36, 39, 0.790083) 31.77%,
     rgba(217, 217, 217, 0) 100%
   );
-  transform: rotate(-180deg);
+  transform: rotate(-180deg); */
+
   z-index: 10;
+
+  background: linear-gradient(
+    180deg,
+    #daebf2 0%,
+    #daebf2 21.88%,
+    rgba(230, 230, 230, 0) 60.94%
+  );
+  transform: rotate(-180deg);
 }
 
 .text-overlay {
@@ -43,7 +56,9 @@ main {
   bottom: 0;
 
   text-align: center;
-  color: var(--color-off-white);
+  /* color: var(--color-off-white); */
+  color: var(--color-purple);
+
   padding: 8px;
 }
 
@@ -51,17 +66,27 @@ main {
   color: var(--color-off-white);
 }
 
-section.banner-bottom {
-    grid-area: 4 / 2 / span 1 / span 2;
-  }
+.text-overlay p {
+  margin: 0;
+}
 
-  section.services {
-    grid-area: 4 / 4 / span 1 / span 2;
-  }
+section.banner-bottom {
+  grid-area: 4 / 2 / span 1 / span 2;
+}
+
+section.services {
+  grid-area: 4 / 4 / span 1 / span 2;
+}
 
 footer {
   grid-area: 5 / 1 / span 1 / span 14;
   background-color: var(--color-celeste-blue);
+
+  margin-top: 48px;
+}
+
+p.text-center {
+  text-align: center;
 }
 
 img.fit-image {
@@ -80,6 +105,9 @@ img.fit-image {
 .hr {
   height: 1px;
   border: 0;
+  margin-top: 24px;
+  margin-bottom: 0;
+
   background-color: var(--color-gray);
 }
 
@@ -93,12 +121,15 @@ img.fit-image {
   align-items: center;
   justify-content: center;
   gap: 24px;
+  align-self: center;
 
   background-color: var(--color-purple);
   text-transform: uppercase;
+  white-space: nowrap;
   padding: 16px;
   border-radius: 32px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+
   width: 100%;
 }
 
@@ -111,6 +142,8 @@ img.fit-image {
   color: var(--color-off-white);
 }
 
+/*-----media queries/desktop--------- */
+
 @media (min-width: 800px) {
   #main-container {
     grid-template-columns: 88px repeat(12, 1fr) 88px;
@@ -122,5 +155,14 @@ img.fit-image {
 
   aside {
     grid-area: 3 / 11 / span 1 / span 3;
+  }
+
+  .cta {
+    min-width: min-content;
+    max-width: 50%;
+  }
+
+  main .cta {
+    margin-top: auto;
   }
 }

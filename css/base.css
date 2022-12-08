@@ -52,8 +52,6 @@ body {
   font-family: "Tenor Sans";
   font-size: 14px;
   color: var(--color-font);
-
-
 }
 
 /* Useful as default. 
@@ -112,6 +110,10 @@ h3 {
 
 .display-3 {
   font-size: 18px;
+}
+
+p, span {
+  line-height: 1.5rem;
 }
 
 small {

@@ -29,7 +29,8 @@ footer hr {
   border: 0;
 
   background-color: var(--color-gray);
-} 
+
+}
 
 .menu-footer {
   display: flex;
@@ -42,11 +43,14 @@ footer hr {
 
 .menu-footer a {
   text-transform: uppercase;
-  color: var(--color-purple);
   font-family: var(--font-family-header);
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 2px;
+}
+
+.menu-footer a:not(:hover) {
+  color: var(--color-purple);
 }
 
 .bottom-footer {

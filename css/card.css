@@ -2,17 +2,12 @@ main h2 {
   text-align: center;
 }
 
-/* main hr {
-  width: 140px;
-  height: 1px;
-  border: 0;
-  background-color: var(--color-gray);
-} */
+/*--------cards----------------------------*/
 
-/*------------card content----------------*/
-
-/* .card-content {
-  background-color: var(--color-bg-element);
+/* external box that contains all of the card, basically the edge */
+.card {
+  display: flex;
+  flex-direction: column;
 
   border: 1px dashed var(--color-orange);
   margin: 0;
@@ -20,83 +15,46 @@ main h2 {
 
   object-fit: cover;
   padding: 8px;
-} */
+}
 
-/* .photo {
-  object-fit: cover;
-  margin: 0;
-} */
+/* card type with white background */
+.card.agenda {
+  background-color: white;
+}
 
-/* .card-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-} */
+/* card type with beige background */
+.card.default {
+  background-color: var(--color-bg-element);
+
+      height: fit-content;
+}
+
+aside .card.default {
+  height: fit-content;
+}
+
+/*--------card "default" -------------------*/
 
 .description-card {
   display: flex;
   flex-direction: column;
 
-  gap: 24px;
   margin: 16px 0;
   padding: 8px;
   padding-left: 0;
 
   text-align: start;
+
+  height: 100%;
 }
 
 .display-3 {
   margin: 0px 0px;
-  padding-bottom: 24px;
 }
 
-/*----------card banner----------------------*/
-
-/* .card-banner { */
-  /* display: flex;
-  flex-direction: column;
-  /* align-items: center; */
-
-  /* border: 1px dashed var(--color-orange);
-  margin: 24px 0px;
-  padding: 8px;
-
-  width: 100%; */
-  /* text-align: center; */
-/* } */
-
-/* .card-banner p {
-  margin-top: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 8px;
-} */
-
-/*-------card small agenda ---------------*/
-
-/* .card-agenda {
-  display: flex;
-  flex-direction: column;
-
-  width: 100%;
-  padding: 8px;
-  margin: 24px 0 32px 0;
-  font-size: 16px;
-  border: 1px dashed var(--color-orange); */
-/* } */
-
-/*---------card small services---------------*/
-/* 
-.card-services {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  padding: 8px;
+aside > section h3 {
   text-align: center;
-  margin: 24px 0px;
-} */
+}
 
 /*--------card hero---------------------*/
 
@@ -109,52 +67,11 @@ main h2 {
   position: relative;
 }
 
-
-
-/*------------------------------------*/
+/*--------media queries---------------------*/
 
 @media (min-width: 800px) {
-  /* .card-container {
-    display: flex;
-    flex-basis: 300px;
-  } */
-
-  /* .card-child {
-    gap: 24px;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    flex-grow: 2;
-  } */
-
-  /* .card-child h2 {
-    font-size: 24px;
-    text-align: start;
-  } */
-
   .banner-bottom {
     display: flex;
     flex-direction: column;
   }
-}
-
-/* box esterno che contiene tutto della card, in pratica il bordo*/
-.card {
-  border: 1px dashed var(--color-orange);
-  margin: 0;
-  padding: 0;
-
-  object-fit: cover;
-  padding: 8px;
-}
-
-/* tipo di card con sfondo bianco */
-.card.agenda {
-  background-color: white;
-}
-
-/* tipo di card con sfondo marrone */
-.card.default {
-  background-color: var(--color-bg-element);
 }
