@@ -10,6 +10,7 @@
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
+
 }
 
 .contact-footer {
@@ -48,6 +49,10 @@ footer hr {
 
 .menu-footer a:not(:hover) {
   color: var(--color-purple);
+}
+
+footer .social-media-footer a:hover {
+ transform: scale(1.1);
 }
 
 .bottom-footer {
