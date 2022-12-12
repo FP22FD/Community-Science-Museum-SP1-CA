@@ -19,6 +19,9 @@ main {
   grid-area: 3 / 2 / span 1 / span 4;
   display: flex;
   flex-direction: column;
+
+  gap: 48px;
+
 }
 
 /*-------custom css for mobile------- */
@@ -100,7 +103,7 @@ img.fit-image {
 .hr {
   height: 1px;
   border: 0;
-  margin-top: 24px;
+  margin-top: 48px;
   margin-bottom: 0;
 
   background-color: var(--color-gray);
@@ -141,6 +144,29 @@ img.fit-image {
   color: var(--color-off-white);
 }
 
+/*---------aside agenda---------------*/
+
+aside.agenda {
+  display: none;
+}
+
+aside section {
+  background-color: var(--color-off-white);
+
+  padding: 8px;
+}
+
+aside .agenda {
+
+  display: flex;
+
+  margin-top: 8px;
+}
+
+aside .agenda img {
+  margin-top: 16px;
+}
+
 /*-----media queries/desktop--------- */
 
 @media (min-width: 800px) {
@@ -172,5 +198,17 @@ img.fit-image {
 
   main .cta {
     margin-top: auto;
+  }
+
+  .title h1 {
+    text-align: start;
+  }
+
+  aside.agenda {
+    display: block;
+  }
+
+  .text-overlay h1 {
+    text-align: center;
   }
 }

@@ -56,7 +56,6 @@ section.services img {
 
   .banner-top {
     margin: 48px 0 0 0;
-
   }
 
   .wrap {
@@ -87,9 +86,12 @@ section.services img {
     display: flex;
     flex-direction: row;
     column-gap: 16px;
+
+    margin-top: 48px;
   }
 
   .bottom-section section {
     flex-basis: 50%;
   }
+
 }

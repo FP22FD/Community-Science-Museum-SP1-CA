@@ -3,7 +3,7 @@
 
 /* style for mobile version */
 
-aside.agenda {
+/* aside.agenda {
   display: none;
 }
 
@@ -34,7 +34,7 @@ main h2 {
 
 /*-----------media queries----------------*/
 
-@media (min-width: 800px) {
+/* @media (min-width: 800px) {
   .title h1 {
     text-align: start;
   }
@@ -43,4 +43,4 @@ main h2 {
     display: block;
   }
 
-}
+} */
