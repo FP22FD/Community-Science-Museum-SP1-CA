@@ -2,7 +2,9 @@
 @import "/css/card.css";
 
 /* custom css for homepage */
-
+main {
+  gap: 0;
+}
 .hero a:not(:hover) {
   color: var(--color-purple);
 }
@@ -16,6 +18,16 @@
 
 .title {
   margin-top: 24px;
+}
+
+.text-overlay h1 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.1em;
+}
+
+.text-overlay p {
+  display: none;
 }
 
 .bottom-section {
@@ -39,7 +51,20 @@ section.services img {
   padding: 16px;
 }
 
+footer {
+  grid-area: 5 / 1 / span 1 / span 14;
+}
+
 /*-----media queries/desktop--------- */
+
+@media (min-width: 500px) {
+  .text-overlay h1 {
+    font-size: 32px;
+  }
+  .text-overlay p {
+    display: block;
+  }
+}
 
 @media (min-width: 800px) {
   .title {
@@ -52,10 +77,23 @@ section.services img {
     grid-area: 3 / 2 / span 1 / span 12;
   }
 
+  .text-overlay h1 {
+    margin: 0.83em;
+    font-size: 40px;
+  }
+  .text-overlay p {
+    display: block;
+  }
+
   /*----- homne banner top--------- */
 
   .banner-top {
-    margin: 48px 0 0 0;
+    /* margin: 48px 0 0 0; */
+    padding: 16px;
+  }
+
+  .banner-top h2 {
+    margin-top: 0;
   }
 
   .wrap {
@@ -93,5 +131,4 @@ section.services img {
   .bottom-section section {
     flex-basis: 50%;
   }
-
 }

@@ -8,6 +8,7 @@
     <meta name="description"
         content="This is the Community Science Museum for children and their families. We believe that science and technology can inspire people to explore the world.">
     <title>Community Science Museum | Home</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="css/index.css">
 </head>
 
@@ -21,14 +22,6 @@
             <input type="checkbox" id="hamburger-input">
 
             <nav aria-label="main menu">
-
-                <!-- grid part | Icon close -->
-                <!-- <label id="close-label" for="hamburger-input">
-                    <img src="assets/icons/Close.svg" alt="close icon">
-                    <h4 id="close-btn">Close</h4>
-                </label>
-
-                <hr> -->
 
                 <a class="active" href="index.html">Home</a>
                 <a href="events.html">Events</a>
@@ -54,7 +47,15 @@
 
         <section class="hero w-100 title">
             <div class="image">
-                <img src="assets/images/reading-2762010_1280-min.jpg" class="w-100" alt="Child Reading a book">
+                <picture>
+                    <!-- if desktop -->
+                    <source srcset="/assets/images/hero-img/croped/hero-page-desktop1268x800.png"
+                        media="(min-width: 800px)">
+                    <!-- default to mobile -->
+                    <img src="/assets/images/hero-img/croped/hero-page-desktop1268x800.png" class="w-100"
+                        alt="Child Reading a book">
+                </picture>
+
                 <div class="image-gradient w-100 h-100"></div>
                 <div class="text-overlay w-100">
                     <h1><a href="about.html">Welcome to the Community Science Museum</a></h1>
@@ -267,7 +268,7 @@
             </div>
             <hr>
             <div class="footer-box contact-footer">
-                <span>Contactcsm@gmail.com</span>
+                <a href="mailto:Contactcsm@gmail.com">Contactcsm@gmail.com</a>
                 <span>+47 029 5632</span>
                 <span>10:00 - 16:00 - Tue - Fri</span>
             </div>
@@ -275,7 +276,7 @@
             <div class="footer-box menu-footer">
                 <a href="blog.html">Blog</a>
                 <a href="get-involved.html">Get Involved</a>
-                <a href="exhibitions.html">Explore</a>
+                <a href="explore.html">Explore</a>
             </div>
 
             <div class="bottom-footer">

@@ -41,7 +41,19 @@
   /* Used for accent, action and border*/
   --color-orange: #dd8560;
 
+  /* Used for box, input shadow style*/
+  --shadow-box: rgba(0, 0, 0, 0.2);
+
+  /* Used for cta hover style*/
+  --cta-hover: #6f328b;
+
+  /* Used for input border style*/
+  --color-input-border: #ccc;
+
+  /* Fonts*/
   --font-family-header: "Amatic SC";
+
+  --font-family-base: "Tenor Sans";
 }
 
 body {
@@ -103,6 +115,7 @@ h3 {
 .display-1 {
   font-size: 32px;
 }
+
 .display-2 {
   font-size: 24px;
   letter-spacing: 0;
@@ -122,7 +135,7 @@ small {
 }
 
 a {
-  color: #212427;
+  color: var(--color-font);
   text-decoration: none;
 }
 
@@ -139,6 +152,49 @@ a.active {
 
 figure {
   margin: 0;
+}
+
+.mobile {
+  display: block;
+}
+.desktop {
+  display: none;
+}
+
+/* style for forms */
+
+input[type="email"] {
+  margin-top: 4px;
+
+  font-family: var(--font-family-base);
+  font-size: 16px;
+  min-height: 40px;
+
+  border: 1px solid var(--color-input-border);
+}
+
+input[type="email"]:focus {
+  border: 0;
+
+  outline: 1px solid var(--color-orange);
+  box-shadow: 0 4px 8px 0 var(--shadow-box);
+}
+
+textarea {
+  min-height: 200px;
+  margin-top: 4px;
+
+  font-family: var(--font-family-base);
+  font-size: 16px;
+
+  border: 1px solid var(--color-input-border);
+}
+
+textarea[name="input-message"]:focus {
+  border-color: transparent;
+
+  outline: 1px solid var(--color-orange);
+  box-shadow: 0 4px 8px 0 var(--shadow-box);
 }
 
 @media (min-width: 800px) {
@@ -171,5 +227,12 @@ figure {
 
   small {
     font-size: 14px;
+  }
+
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
   }
 }

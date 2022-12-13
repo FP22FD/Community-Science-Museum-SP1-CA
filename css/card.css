@@ -16,23 +16,23 @@ main h2 {
   object-fit: cover;
   padding: 8px;
 
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 var(--shadow-box);
   transition: 0.3s;
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 var(--shadow-box);
 }
 
 /* card type with white background */
 .card.agenda {
-  background-color: white;
+  background-color: var(--color-off-white);
 }
 
 /* card type with beige background */
 .card.default {
   background-color: var(--color-bg-element);
-  
+
   height: fit-content;
 }
 
@@ -50,11 +50,16 @@ aside .card.default {
   padding: 8px;
   padding-left: 0;
 
-  height: fit-content;
+  /* height: fit-content; */
+  height: 100%;
 }
 
 .description-card h2 {
   text-align: start;
+}
+
+.description-card .cta {
+  margin-top: auto;
 }
 
 .display-3 {
@@ -85,7 +90,6 @@ aside > section h3 {
   }
 
   .description-card h2 {
-  text-align: start;
-}
-
+    text-align: start;
+  }
 }
