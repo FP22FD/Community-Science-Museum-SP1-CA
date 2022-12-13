@@ -26,10 +26,6 @@ main {
   line-height: 1.1em;
 }
 
-.text-overlay p {
-  display: none;
-}
-
 .bottom-section {
   grid-area: 4 / 2 / span 1 / span 4;
 
