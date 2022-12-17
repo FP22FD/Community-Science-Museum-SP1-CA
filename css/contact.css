@@ -1,0 +1,19 @@
+@import "/css/template.css";
+@import "/css/card.css";
+
+/* style for mobile */
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 32px;
+  padding: 16px;
+  width: 100%;
+}
