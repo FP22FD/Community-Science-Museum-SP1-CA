@@ -4,7 +4,7 @@
 
 Noroff SP1 Semester project website The website is called `Community Science Museum` and the target audience is children from 7 to 15 years old interested in art, technology and music.
 
-The website is hosted at the following url:
+The website is hosted at the following url: <https://shimmering-peony-58cb28.netlify.app>
 
 ## Description
 
@@ -40,6 +40,8 @@ The website code has been validated using the following tools:
 
 - check redirect links: <https://validator.w3.org/checklink>
 
+- check accessibility: <https://www.accessibilitychecker.org/>
+
 ## Dependencies
 
 <!-- - Describe any prerequisites, libraries, OS version, etc., needed before installing the program.
@@ -51,8 +53,8 @@ No other tools are required to compile or run the website.
 
 Links:
 
-- [Figma Mobile prototype]
-- [Figma Desktop prototype]
-- [Netlify website]
+- [Figma Mobile prototype] <https://www.figma.com/proto/tCYET30z7TstElOvUJFEZT/%5BDelivery%5D-Semester-Project-SP1?page-id=1418%3A1584&node-id=1916%3A1200&viewport=109%2C116%2C0.18&scaling=scale-down&starting-point-node-id=1916%3A1200>
+- [Figma Desktop prototype] <https://www.figma.com/proto/tCYET30z7TstElOvUJFEZT/%5BDelivery%5D-Semester-Project-SP1?page-id=417%3A615&node-id=1924%3A1265&viewport=403%2C87%2C0.08&scaling=scale-down&starting-point-node-id=1924%3A1265>
+- [Netlify website] <https://shimmering-peony-58cb28.netlify.app>
 
 NB. The implemented website version is slightly different, because few improvements to the Figma/design files were made based on the `Design course` and `HTML & CSS course`.
