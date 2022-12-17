@@ -161,13 +161,21 @@ figure {
   display: none;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 /* style for forms */
+
+input[type="email"],
+input[type="text"],
+textarea {
+  font-family: var(--font-family-base);
+  font-size: 16px;
+}
 
 input[type="email"] {
   margin-top: 4px;
-
-  font-family: var(--font-family-base);
-  font-size: 16px;
   min-height: 40px;
 
   border: 1px solid var(--color-input-border);
@@ -183,10 +191,6 @@ input[type="email"]:focus {
 textarea {
   min-height: 200px;
   margin-top: 4px;
-
-  font-family: var(--font-family-base);
-  font-size: 16px;
-
   border: 1px solid var(--color-input-border);
 }
 

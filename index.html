@@ -22,21 +22,27 @@
             <input type="checkbox" id="hamburger-input">
 
             <nav aria-label="main menu">
-
                 <a class="active" href="index.html">Home</a>
                 <a href="events.html">Events</a>
                 <a href="exhibitions.html">Exhibitions</a>
                 <a href="visit.html">Visit</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
-
             </nav>
 
             <!-- grid part | Icon search -->
             <label id="search-label" for="search-input">
-                <img src="assets/icons/Searchdesk.svg" alt="search icon">
+                <img src="assets/icons/Searchdesk.svg" class="pointer" alt="search icon">
             </label>
-            <input type="checkbox" id="search-input">
+            <input id="search-input" type="checkbox" name="search">
+
+            <div class="search-box">
+                <form action="events.html" class="w-100">
+                    <label id="search-input-label" aria-hidden="true">Search</label>
+                    <input type="text" aria-labelledby="search-input-label" name="search" placeholder="Search.." class="w-100" />
+                    <button type="submit" class="pointer"><img src="assets/icons/Searchdesk-white.svg" alt="search icon"></button>
+                </form>
+            </div>
 
             <!-- grid part | logo -->
             <a id="logo" href="index.html">
@@ -49,11 +55,9 @@
             <div class="image">
                 <picture>
                     <!-- if desktop -->
-                    <source srcset="/assets/images/hero-desktop.png"
-                        media="(min-width: 800px)">
+                    <source srcset="/assets/images/hero-desktop.png" media="(min-width: 800px)">
                     <!-- default to mobile -->
-                    <img src="/assets/images/hero-mobile.png" class="w-100"
-                        alt="Child Reading a book">
+                    <img src="/assets/images/hero-mobile.png" class="w-100" alt="Child Reading a book">
                 </picture>
 
                 <div class="image-gradient w-100 h-100"></div>
@@ -124,8 +128,8 @@
                             <p>
                                 We have many exhibits that stimulate children's creativity and curiosity. One of
                                 the funniest ones (also for creative adults) is the Borrowing Energy Exhibition
-                                On loan from the NEMO Science Museum in Amsterdam. We also have events for
-                                children such as: theater, storytelling, concerts, and cinema.
+                                On loan from the NEMO Science Museum in Amsterdam. 
+                                We also have events for children such as: theater, storytelling, concerts, and cinema.
                             </p>
                             <div class="cta">
                                 <a href="contact.html">
@@ -150,8 +154,7 @@
                             <p>
                                 Take your out of the stress of daily life with this virtual painter studio. Even if
                                 you think this isn't for creative people, virtual painting might prove you wrong. Here,
-                                students learn the
-                                basics of colors, the painting process and composition on their own.
+                                students learn the basics of colors, the painting process and composition on their own.
                             </p>
                             <div class="cta">
                                 <a href="contact.html">

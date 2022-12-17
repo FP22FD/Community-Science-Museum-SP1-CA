@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="See the latest events at the Community Science Museum and enjoy fun and informative activities.">
+    <meta name="description" content="See the latest events at the Community Science Museum and enjoy fun and informative activities.">
     <title>Community Science Museum | Events</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="css/events.css">
@@ -20,29 +19,40 @@
                 <img src="assets/icons/hamburger_button.svg" alt="hamburger icon">
             </label>
             <input type="checkbox" id="hamburger-input">
-
+        
             <nav aria-label="main menu">
-
+        
                 <a href="index.html">Home</a>
                 <a class="active" href="events.html">Events</a>
                 <a href="exhibitions.html">Exhibitions</a>
                 <a href="visit.html">Visit</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
-
+        
             </nav>
-
+        
             <!-- grid part | Icon search -->
             <label id="search-label" for="search-input">
-                <img src="assets/icons/Searchdesk.svg" alt="search icon">
+                <img src="assets/icons/Searchdesk.svg" class="pointer" alt="search icon">
             </label>
-            <input type="checkbox" id="search-input">
-
+            <input id="search-input" type="checkbox" name="search">
+        
+            <div class="search-box">
+                <form action="events.html" class="w-100">
+                    <label id="search-input-label" aria-hidden="true">Search</label>
+                    <input type="text" aria-labelledby="search-input-label" name="search" placeholder="Search.."
+                        class="w-100" />
+                    <button type="submit" class="pointer"><img src="assets/icons/Searchdesk-white.svg"
+                            alt="search icon"></button>
+                </form>
+            </div>
+        
+        
             <!-- grid part | logo -->
             <a id="logo" href="index.html">
                 <img src="assets/icons/Group2desk.svg" class="fit-image" alt="logo">
             </a>
-
+        
         </header>
 
         <div class="title">
@@ -59,8 +69,7 @@
                     <h2 class="display-2">Visiting Professor of Aeronautics</h2>
                     <p>
                         It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute
-                        of Technology will be
-                        delivering 3 lectures on the development of aeronautics and where the future lies in
+                        of Technology will be delivering 3 lectures on the development of aeronautics and where the future lies in
                         this exciting "space".
                     </p>
                     <p>
@@ -109,10 +118,8 @@
                         On loan from the NEMO Science Museum in Amsterdam, the Energetica exhibition is coming to
                         the Community Science Museum.
                         It's a series of installations that allow visitors to experience the power of the elements
-                        as we harness them. From
-                        solar energy powering lighting to "Wind Island" that shows how turbines are able to use and
-                        control wind to create
-                        power.
+                        as we harness them. From solar energy powering lighting to "Wind Island" that shows how turbines
+                        are able to use and control wind to create power.
                     </p>
                     <p>
                         Drop-in, no need to book.

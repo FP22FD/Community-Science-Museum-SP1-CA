@@ -1,4 +1,4 @@
-/*-------custom css for mobile------- */
+/*  custom css for mobile */
 
 #main-container {
   display: grid;
@@ -22,8 +22,6 @@ main {
 
   gap: 48px;
 }
-
-/*-------custom css for mobile------- */
 
 .image-gradient {
   position: absolute;

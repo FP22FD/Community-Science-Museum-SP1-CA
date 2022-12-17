@@ -19,29 +19,39 @@
                 <img src="assets/icons/hamburger_button.svg" alt="hamburger icon">
             </label>
             <input type="checkbox" id="hamburger-input">
-
+        
             <nav aria-label="main menu">
-
+        
                 <a href="index.html">Home</a>
                 <a class="active" href="events.html">Events</a>
                 <a href="exhibitions.html">Exhibitions</a>
                 <a href="visit.html">Visit</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
-
+        
             </nav>
-
+        
             <!-- grid part | Icon search -->
             <label id="search-label" for="search-input">
-                <img src="assets/icons/Searchdesk.svg" alt="search icon">
+                <img src="assets/icons/Searchdesk.svg" class="pointer" alt="search icon">
             </label>
-            <input type="checkbox" id="search-input">
-
+            <input id="search-input" type="checkbox" name="search">
+        
+            <div class="search-box">
+                <form action="events.html" class="w-100">
+                    <label id="search-input-label" aria-hidden="true">Search</label>
+                    <input type="text" aria-labelledby="search-input-label" name="search" placeholder="Search.."
+                        class="w-100" />
+                    <button type="submit" class="pointer"><img src="assets/icons/Searchdesk-white.svg"
+                            alt="search icon"></button>
+                </form>
+            </div>
+        
             <!-- grid part | logo -->
             <a id="logo" href="index.html">
                 <img src="assets/icons/Group2desk.svg" class="fit-image" alt="logo">
             </a>
-
+        
         </header>
 
         <div class="title">
@@ -72,8 +82,8 @@
                         13:00 where you'll get to explore and experiment with our team of experts.
                         During the school holidays we run special holiday clubs where you can join other children
                         your age to go on a journey of discovery.
-                        Each holiday we pick a new theme to explore. To find out more about the holiday club and how
-                        you can join, send us a message.
+                        Each holiday we pick a new theme to explore. 
+                        To find out more about the holiday club and how you can join, send us a message.
                     </p>
                     <div class="cta">
                         <a href="contact.html">
@@ -124,8 +134,7 @@
                     <p>
                         Our museum offers various ways for you to use our resources and contribute towards them. We
                         have online records, laboratory space, and a working relationship with a number of
-                        universities around the
-                        country. Contact us to find out more.
+                        universities around the country. Contact us to find out more.
                     </p>
                     <div class="cta">
                         <a href="contact.html">

@@ -1,7 +1,7 @@
 @import "/css/template.css";
 @import "/css/card.css";
 
-/* style for mobile version */
+/* style for mobile */
 
 .description-card {
   margin-top: 0;
@@ -24,5 +24,6 @@ figure {
 }
 
 .important-info {
-    color: var(--color-orange);
+  text-decoration: underline;
+  text-decoration-style: double;
 }

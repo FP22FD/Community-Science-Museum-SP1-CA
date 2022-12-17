@@ -1,9 +1,7 @@
 @import "/css/template.css";
 @import "/css/card.css";
 
-/* style for mobile version */
-
-/* style for forms */
+/* style for mobile */
 
 form {
   display: flex;

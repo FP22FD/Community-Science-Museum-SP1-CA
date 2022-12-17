@@ -19,29 +19,39 @@
                 <img src="assets/icons/hamburger_button.svg" alt="hamburger icon">
             </label>
             <input type="checkbox" id="hamburger-input">
-
+        
             <nav aria-label="main menu">
-
+        
                 <a href="index.html">Home</a>
                 <a href="events.html">Events</a>
                 <a href="exhibitions.html">Exhibitions</a>
                 <a href="visit.html">Visit</a>
                 <a class="active" href="about.html">About</a>
                 <a href="contact.html">Contact</a>
-
+        
             </nav>
-
+        
             <!-- grid part | Icon search -->
             <label id="search-label" for="search-input">
-                <img src="assets/icons/Searchdesk.svg" alt="search icon">
+                <img src="assets/icons/Searchdesk.svg" class="pointer" alt="search icon">
             </label>
-            <input type="checkbox" id="search-input">
-
+            <input id="search-input" type="checkbox" name="search">
+        
+            <div class="search-box">
+                <form action="events.html" class="w-100">
+                    <label id="search-input-label" aria-hidden="true">Search</label>
+                    <input type="text" aria-labelledby="search-input-label" name="search" placeholder="Search.."
+                        class="w-100" />
+                    <button type="submit" class="pointer"><img src="assets/icons/Searchdesk-white.svg"
+                            alt="search icon"></button>
+                </form>
+            </div>
+        
             <!-- grid part | logo -->
             <a id="logo" href="index.html">
                 <img src="assets/icons/Group2desk.svg" class="fit-image" alt="logo">
             </a>
-
+        
         </header>
 
         <div class="title">
@@ -58,26 +68,23 @@
                             <figcaption>Child learning | Community Science Musem</figcaption>
                         </figure>
                         <div class="description-card">
-                            <h2 class="display-2">Children's curiosity: what is its importance in learning and how to
-                                stimulate it?</h2>
+                            <h2 class="display-2">Children's curiosity</h2>
+                            <h3 class="display-3">What is its importance in learning and how to stimulate it?</h3>
                             <p>
                                 Through children's curiosity there is a development of creativity and reasoning of the
                                 brain.
                                 People are curious by nature, and children want to learn and know about things from an
-                                early age. There are different
-                                ways it manifests itself in the little ones, such as in questions, in games, in
-                                experiences, and in errors and
-                                successes. To encourage children to be curious and discover more, it is important to
-                                understand that curiosity is a
+                                early age. There are different ways it manifests itself in the little ones, such as in questions, 
+                                in games, in experiences, and in errors and successes. 
+                                To encourage children to be curious and discover more, it is important to understand that curiosity is a
                                 natural process.
                             </p>
                             <p>
                                 Generally, this characteristic is observed in the first year of life as an internal
-                                process of the child, without any
-                                external manifestations. A child's perception of the world around him begins to emerge
-                                in the second year of life, as
-                                well as his awareness that people and things are different from him. This is when the
-                                famous "why phase" begins.
+                                process of the child, without any external manifestations. 
+                                A child's perception of the world around him begins to emerge
+                                in the second year of life, as well as his awareness that people and things are different from him. 
+                                This is when the famous "why phase" begins.
                             </p>
                         </div>
                     </div>
