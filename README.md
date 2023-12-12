@@ -1,10 +1,18 @@
 # Community-Science-Museum-SP1-CA
 
+<img src="docs/desktop.png" height="300px" alt="Desktop">
+<img src="docs/mobile.png" height="300px" alt="Mobile">
+
 <!-- A simple overview of use/purpose. -->
 
 Noroff SP1 Semester project website The website is called `Community Science Museum` and the target audience is children from 7 to 15 years old interested in art, technology and music.
 
 The website is hosted at the following url: <https://shimmering-peony-58cb28.netlify.app>
+
+Assignment:
+
+- [Task](semester-CA-task.pdf)
+- [Brief](semester-CA-brief.pdf)
 
 ## Description
 
